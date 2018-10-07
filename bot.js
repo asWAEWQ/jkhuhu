@@ -514,4 +514,4 @@ client.on('message', message =>{
     message.channel.send("تم الأتصال بالروم الصوتي")
 }})
 
-client.login('NDc3MDUwNzYyODAzOTM3Mjgw.Dk2klA.sDEH3iYy6SWVtSTf8fRBZTRBvV0');
+client.login(proceaa.env.BOT_TOKEN);
