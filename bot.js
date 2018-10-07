@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '+'
+const prefix = '$'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -340,7 +340,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content  === prefix + "help") {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .addField('play', 'لتشغيل اغنية')
